@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SportsMechanics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-icon">
+            <i class="fa fa-align-justify"></i>
+        </div>
+        <img src="images/large-logo.png" height="70%" alt="logo-main">
+    </header>
+
+    <section class="main-content">
+        <div class="content-top">
+            
+            <div class="video-container">
+            <video id="video-main" class="content-top-video" src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball1.mp4"
+                width="100%" height="100%"></video>
+            <div id="progressBar">
+                <span id="progress"></span>
+            </div>
+            <div class="video-menu fa-commons">
+                <i class="fa fa-ellipsis-v"></i>
+            </div>
+            <div class="video-controls fa-commons" id="video-controls">
+                <i class="fa fa-step-backward"></i>
+                <i class="fa fa-play" onclick="togglePlayPause()" id="playpause"></i>
+                <i class="fa fa-step-forward"></i>
+            </div>
+            <div class="video-volume fa-commons" id="video-volume">
+                <i class="fa fa-volume-up"></i>
+                <input id="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()" />
+            </div>
+        </div>
+        <p class="content-top-video-title">Virat Smashes SA - Ind Vs SA</p>
+        <p class="content-top-video-date">8th - March</p>
+        <hr>
+        
+        </div>
+    </section>
+    <section class="other-videos">
+            <p class="next">Next >></p>
+            <div class="outer">
+                <div class="video-subblock">
+                    <i class="fa fa-play video-subblock-buttons play-button"></i>
+                    <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                    <video class="video-item">
+                        <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball1.mp4"
+                            type="video/mp4">
+                    </video>
+                    <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                    <p class="video-date">5 Feb 2016</span>
+                        <p class="video-length">4:15</span>
+                </div>
+                <div class="video-subblock">
+                    <i class="fa fa-play video-subblock-buttons play-button"></i>
+                    <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                    <video class="video-item">
+                        <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball2.mp4"
+                            type="video/mp4">
+                    </video>
+                    <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                    <p class="video-date">5 Feb 2016</p>
+                    <p class="video-length">4:15</p>
+                </div>
+                <div class="video-subblock">
+                    <i class="fa fa-play video-subblock-buttons play-button"></i>
+                    <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                    <video class="video-item">
+                        <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball2.mp4"
+                            type="video/mp4">
+                    </video>
+                    <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                    <p class="video-date">5 Feb 2016</p>
+                    <p class="video-length">4:15</p>
+                </div>
+                <div class="video-subblock">
+                    <i class="fa fa-play video-subblock-buttons play-button"></i>
+                    <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                    <video class="video-item">
+                        <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball2.mp4"
+                            type="video/mp4">
+                    </video>
+                    <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                    <p class="video-date">5 Feb 2016</p>
+                    <p class="video-length">4:15</p>
+                </div>
+                <div class="video-subblock">
+                    <i class="fa fa-play video-subblock-buttons play-button"></i>
+                    <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                    <video class="video-item">
+                        <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball2.mp4"
+                            type="video/mp4">
+                    </video>
+                    <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                    <p class="video-date">5 Feb 2016</p>
+                    <p class="video-length">4:15</p>
+                </div>
+                <div class="video-subblock">
+                        <i class="fa fa-play video-subblock-buttons play-button"></i>
+                        <i class="fa fa-ellipsis-v video-subblock-buttons options-button"></i>
+                        <video class="video-item">
+                            <source src="https://d3d0fl6l6djog.cloudfront.net/IPL-2017/SUNRISERSVSROYALCHALLENGERS050417/SUNRISERSVSROYALCHALLENGERS050417-SH-Inn1-Over1-Ball2.mp4"
+                                type="video/mp4">
+                        </video>
+                        <P class="video-title">Ind vs SA - SA tour virat 50</P>
+                        <p class="video-date">5 Feb 2016</p>
+                        <p class="video-length">4:15</p>
+                    </div>
+            </div>
+            </div>
+        </section>
+    <script src="./javascripts/script.js"></script>
+</body>
+
+</html>
